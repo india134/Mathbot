@@ -7,6 +7,10 @@ import json
 # ========== SETTING UP OCR ==========
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
+# Set Tesseract path dynamically (Streamlit Cloud doesn't have C:\Program Files\)
+pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"  # Path for Linux (Streamlit Cloud)
+
+
 # ========== API CONFIGURATION ==========
 st.sidebar.subheader("🔑 Enter Your Groq API Key")
 api_key = st.sidebar.text_input("API Key:", type="password")
