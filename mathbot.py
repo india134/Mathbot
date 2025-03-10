@@ -65,7 +65,7 @@ def preprocess_image(image):
 extracted_text = ""
 
 if uploaded_file is not None:
-    st.image(uploaded_file, caption="Uploaded Image", use_container_width=True)
+    st.image(uploaded_file, caption="Uploaded Image")
     try:
         img = Image.open(uploaded_file)
         img = preprocess_image(img)
