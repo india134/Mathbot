@@ -12,8 +12,9 @@ pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"  # Path for Linux (
 
 
 # ========== API CONFIGURATION ==========
-st.sidebar.subheader("🔑 Enter Your Groq API Key")
-api_key = st.sidebar.text_input("API Key:", type="password")
+#st.sidebar.subheader("🔑 Enter Your Groq API Key")
+#api_key = st.sidebar.text_input("API Key:", type="password")
+api_key="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"
 
 if not api_key:
     st.warning("Please enter your Groq API Key to use the chatbot.")
